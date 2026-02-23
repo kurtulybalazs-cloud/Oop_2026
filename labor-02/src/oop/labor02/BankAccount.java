@@ -21,7 +21,15 @@ public class BankAccount {
         this.balance += amount;
     }
 
-    void Withdraw(double amount){
+    boolean Withdraw(double amount){
+        if(amount <0){
+            return false;
+        }
+        if(amount > balance){
+            return false;
+        }
         this.balance -= amount;
+        return true;
     }
+
 }
