@@ -8,11 +8,6 @@ public class Main {
 
 
 
-
-
-
-
-
     public static int safeDivide(int a, int b){
         if (b == 0) throw new RuntimeException("DIVISION_BY_ZERO");
         return a/b;
