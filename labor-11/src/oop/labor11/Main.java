@@ -24,8 +24,8 @@ public class Main {
 
     public static void demonstrateFinally(){
         try {
-            System.out.println("try ban vagzunk");
-            throw new RuntimeException("stop)");
+            System.out.println("try ban vagyunk");
+            throw new RuntimeException("stop");
         }catch(Exception e){
             System.out.println("catch ben vagyunk");
             throw e;
