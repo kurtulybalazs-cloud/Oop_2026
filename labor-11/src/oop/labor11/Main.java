@@ -36,9 +36,14 @@ public class Main {
     }
 
     public static void main (String[]args){
-
+    long startTime = System.nanoTime();
+    try {
         demonstrateFinally();
-        System.out.println("a/b = " + safeDivide(1,0));
+        System.out.println("a/b = " + safeDivide(1, 0));
+    }finally {
+        long stopTime = System.nanoTime();
+        System.out.println("time in nanos: " + (stopTime - startTime));
+    }
 
     }
 }
