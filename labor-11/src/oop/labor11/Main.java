@@ -6,7 +6,15 @@ import java.io.FileNotFoundException;
 
 public class Main {
 
-
+    static public String readFirstLine(String fileName) {
+        try (Scanner s = new Scanner(new File(fileName))) {
+            if (!s.hasNextLine())
+                return "";
+            return s.nextLine();
+        } catch (FileNotFoundException e) {
+            return "FILE_NOT_FOUND" ;
+        }
+    }
 
     public static int safeDivide(int a, int b){
         if (b == 0) throw new RuntimeException("DIVISION_BY_ZERO");
@@ -31,5 +39,6 @@ public class Main {
 
         demonstrateFinally();
         System.out.println("a/b = " + safeDivide(1,0));
+
     }
 }
