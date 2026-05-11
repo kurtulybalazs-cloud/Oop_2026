@@ -9,7 +9,6 @@ public class ArrayListDictionary {
 
     private void ArrayListDictionary(){
 
-    }
 
     public static IDictionary newInstance(){
 
