@@ -14,4 +14,6 @@ public interface IDictionary {
     public int size(){
 
     }
+
+
 }
